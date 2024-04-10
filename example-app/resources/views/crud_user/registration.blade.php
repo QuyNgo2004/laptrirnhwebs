@@ -5,8 +5,8 @@
         <div class="cotainer">
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="card-header text-center">Register User</h3>
+                    <div class="card" style="border: 1px solid black">
+                        <h3 class="card-header text-center">Đăng kí</h3>
                         <div class="card-body">
                             <form action="{{ route('user.postUser') }}" method="POST">
                                 @csrf
@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="d-grid mx-auto">
-                                    <button type="submit" class="btn btn-dark btn-block">Sign up</button>
+                                    <button type="submit" class="btn btn-dark btn-block">Đăng kí</button>
                                 </div>
                             </form>
                         </div>

@@ -34,7 +34,10 @@
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
                                     @endif
                                 </div>
-
+                               <div style="display: inline;width:100%;">
+                               <a class="nav-link" style="width:auto;" href="{{ route('login') }}">Đã có tài khoản</a>
+                                <button type="button" style="margin:5px;"> <a class="nav-link" href="{{ route('user.createUser') }}">Đăng kí</a></button>
+                               </div>
                                 <div class="d-grid mx-auto">
                                     <button type="submit" class="btn btn-dark btn-block">Update</button>
                                 </div>

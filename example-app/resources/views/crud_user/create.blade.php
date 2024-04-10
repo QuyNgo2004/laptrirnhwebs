@@ -5,8 +5,8 @@
         <div class="cotainer">
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="card-header text-center">Create User</h3>
+                    <div class="card" style="border: 1px solid black">
+                        <h3 class="card-header text-center">Đăng kí</h3>
                         <div class="card-body">
                             <form action="{{ route('user.postUser') }}" method="POST">
                                 @csrf
@@ -31,8 +31,13 @@
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
                                     @endif
                                 </div>
+                                <div class="form-group mb-3">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="remember"> Remember Me</label>
+                                    </div>
+                                </div>
                                 <div class="d-grid mx-auto">
-                                    <button type="submit" class="btn btn-dark btn-block">Submit</button>
+                                    <button type="submit" class="btn btn-dark btn-block">Đăng kí</button>
                                 </div>
                             </form>
                         </div>

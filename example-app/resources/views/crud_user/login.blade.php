@@ -5,8 +5,8 @@
         <div class="cotainer">
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <div class="card">
-                        <h3 class="card-header text-center">Login</h3>
+                    <div class="card" style="border: 1px solid black">
+                        <h3 class="card-header text-center">Đăng nhập</h3>
                         <div class="card-body">
                             <form method="POST" action="{{ route('user.authUser') }}">
                                 @csrf
@@ -24,9 +24,10 @@
                                     @endif
                                 </div>
                                 <div class="form-group mb-3">
-                                    <div class="checkbox">
+    
+                                    <div class="checkbox" style="text-align: center;">
                                         <label>
-                                            <input type="checkbox" name="remember"> Remember Me
+                                            <input type="checkbox" name="remember" > Remember Me
                                         </label>
                                     </div>
                                 </div>
