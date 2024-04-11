@@ -130,7 +130,7 @@ class CrudUserController extends Controller
     public function listUser()
     {
         if(Auth::check()){
-            $users = User::all();
+            $users = User::paginate(1);
             return view('crud_user.list', ['users' => $users]);
         }
 
@@ -146,4 +146,8 @@ class CrudUserController extends Controller
 
         return Redirect('login');
     }
+    /**
+     * Phan trang
+     */
+    
 }

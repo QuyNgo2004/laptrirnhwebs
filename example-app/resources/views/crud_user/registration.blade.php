@@ -27,10 +27,11 @@
                                 <div class="form-group mb-3">
                                     <input type="password" placeholder="Password" id="password" class="form-control"
                                            name="password" required>
-                                    @if ($errors->has('password'))
+                                    @if ($errors->has('password') )
                                         <span class="text-danger">{{ $errors->first('password') }}</span>
                                     @endif
                                 </div>
+                                
                                 <div class="form-group mb-3">
                                     <div class="checkbox">
                                         <label><input type="checkbox" name="remember"> Remember Me</label>
